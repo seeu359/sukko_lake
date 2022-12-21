@@ -14,3 +14,4 @@ pyflakes==3.0.1
 python-dotenv==0.21.0
 soupsieve==2.3.2.post1
 sqlparse==0.4.3
+whitenoise==6.2.0
