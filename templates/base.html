@@ -106,7 +106,7 @@
   {% for pic in pics %}
     <div class="carousel-item {% if forloop.first %} active {% endif %}" data-bs-interval="5000" >
 
-      <img src="{{ pic.photo.url }}" class="d-block w-100" alt="...">
+      <img src="{{ pic.photo }}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>{{ pic.name }}</h5>
         <p>{{ pic.description }}</p>
@@ -226,7 +226,7 @@
       <div class="col-mx-auto card testimonial-card mb-3">
         <div class="card-up aqua-gradient" style="background: linear-gradient(40deg, #2096ff, #05ffa3) !important;"></div>
         <div class="avatar mx-auto white">
-        <img src="{{ f.user.photo.url }}" class="rounded-circle img-fluid"
+        <img src="{{ f.user.photo }}" class="rounded-circle img-fluid"
           alt="woman avatar">
       </div>
       <div class="card-body text-center">

@@ -8,7 +8,7 @@ class MainPicture(models.Model):
                   'Обязательное поле. '
                   'Будет выделено жирным шрифтом на фото в карусели.',
     )
-    photo = models.ImageField(upload_to='main_picture/')
+    photo = models.URLField()
     description = models.CharField(
         max_length=300,
         help_text='Описание фото.'
@@ -25,8 +25,7 @@ class MainPicture(models.Model):
 class FakeUsers(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    photo = models.ImageField(
-        upload_to='fake_user_photo/',
+    photo = models.URLField(
         help_text='Фото, чтобы адекватно отображаться в отзыве,'
                   ' должно быть размером 250x250. '
                   'Сервис для изменения размеров фото: '
@@ -34,7 +33,7 @@ class FakeUsers(models.Model):
                   'В идеале, чтобы начальный размер изображения был с '
                   'соотношением стороон 1 к 1, к примеру, с таким размером:'
                   ' 950x950. В таком случае, при уменьшении размеров фото '
-                  'не нарушатся пропорции.'
+                  'не нарушатся пропорции.',
     )
     description = models.CharField(
         max_length=200,
