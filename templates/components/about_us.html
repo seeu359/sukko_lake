@@ -1,0 +1,87 @@
+<div id="about-us" class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Почему мы?</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center  fs-4 rounded-3">
+            <svg width="1em" height="1em">
+              <use xlink:href="#car" />
+            </svg>
+          </div>
+          <br>
+          <h5 class="lead mb-0">Собственный автопарк машин</h5>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center fs-4 rounded-3">
+            <svg width="1em" height="1em">
+              <use xlink:href="#eight-year" />
+            </svg>
+          </div>
+          <br>
+          <h5 class="lead mb-0">8 лет на рынке туризма и отдыха</h5>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center fs-4 rounded-3">
+            <svg width="1em" height="1em">
+              <use xlink:href="#no-mediator" />
+            </svg>
+          </div>
+          <br>
+          <p class="lead mb-0">Работаем напрямую без посредников</p>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center  fs-4 rounded-3">
+            <svg width="1em" height="1em">
+              <use xlink:href="#review" />
+            </svg>
+          </div>
+          <br>
+          <p class="lead mb-0">Сотни отзывов на различных площадках</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column align-items-start gap-2">
+        <div class="card bg-light" style="width: 100%;">
+          <article class="card-body mx-auto">
+	        <h4 class="card-title mt-3 text-center">Записаться на экскурсию</h4>
+	      <p class="text-center">Также запись доступна по телефону 999999</p>
+	      <p class="divider-text">
+        <span class="bg-light"></span>
+    </p>
+	<form action="{% url 'create_apps' %}" method="post">
+      {% csrf_token %}
+	    <div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+          {{ form.client_name }}
+    </div> <!-- form-group// -->
+
+    <div class="form-group input-group" style="width: 100%;">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+		</div>
+		  <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">+7</span>
+              </div>
+    	        {{ form.client_number }}
+              </div> <!-- form-group// -->
+
+
+              <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">Записаться</button>
+              </div> <!-- form-group// -->
+            </form>
+            </article>
+          </div> <!-- card.// -->
+          </div>
+    </div>
+  </div>
+</div>
