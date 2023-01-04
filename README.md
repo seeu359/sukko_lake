@@ -6,7 +6,8 @@
 >https://sukkolake-production.up.railway.app/
 
 Freelance project.
-One page application about sukko-lake tour. It is possible to sign up for a tour online
+One page application about sukko-lake tour. It is possible to sign up for a tour online.
+
 Also admin possible add reviews and slides to carousel from admin-panel.
 
 ### Installation
