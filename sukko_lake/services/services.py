@@ -1,8 +1,10 @@
 import os
 import smtplib
 import ssl
-from sukko_lake.services.text import Messages
+
 from dotenv import load_dotenv
+
+from sukko_lake.services.text import Messages
 
 load_dotenv()
 

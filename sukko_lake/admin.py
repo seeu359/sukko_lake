@@ -1,7 +1,6 @@
 from django.contrib import admin
-from sukko_lake.models import MainPicture, FakeUsers, FakeFeedback, \
-    Application
 
+from sukko_lake.models import Application, FakeFeedback, FakeUsers, MainPicture
 
 admin.site.register(MainPicture)
 admin.site.register(FakeUsers)

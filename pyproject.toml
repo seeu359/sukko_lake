@@ -20,6 +20,7 @@ whitenoise = "^6.2.0"
 [tool.poetry.group.dev.dependencies]
 loguru = "^0.6.0"
 flake8 = "^6.0.0"
+isort = "^5.11.4"
 
 
 [build-system]

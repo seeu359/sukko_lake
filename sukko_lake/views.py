@@ -1,11 +1,11 @@
-from django.shortcuts import redirect
 from django.contrib import messages
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, CreateView
-from sukko_lake.models import MainPicture, Application, FakeFeedback
+from django.views.generic import CreateView, TemplateView
+
 from sukko_lake.forms import CreateApplicationForm
-from sukko_lake.services.services import is_true_phone_number, \
-    send_alert_email
+from sukko_lake.models import Application, FakeFeedback, MainPicture
+from sukko_lake.services.services import is_true_phone_number, send_alert_email
 from sukko_lake.services.text import Messages
 
 
